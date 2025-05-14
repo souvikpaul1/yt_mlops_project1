@@ -14,7 +14,7 @@
 7. Setup the username and password and then create DB user.
 
 Username: souvikpaul425
-password: 4tZF2i6GmUDBcz5K
+password: <password>
 IP address: 171.49.253.77
 
 8. Go to "network access" and add ip address - "0.0.0.0/0" so that we can access it from anywhere
