@@ -1,3 +1,28 @@
+Workflow Steps:
+
+- constants
+- config entity
+- artifact entity
+- components
+- pipeline
+- app.py/ demo.py
+-----------------------------------------------
+
+Below modules will interact with each other:
+
+- logging
+- exceptions
+- constants
+- config entity
+- artifact entity
+- components
+- pipeline
+- run pipeline
+
+
+-----------------------------------------------
+
+
 1. Create project template by executing template.py file
 2. Write the code on setup.py and pyproject.toml file to import local packages
    >> Find more about "setup.py and pyproject.toml" at crashcourse.txt
@@ -14,7 +39,7 @@
 7. Setup the username and password and then create DB user.
 
 Username: souvikpaul425
-password: <password>
+password: 4tZF2i6GmUDBcz5K
 IP address: 171.49.253.77
 
 8. Go to "network access" and add ip address - "0.0.0.0/0" so that we can access it from anywhere
