@@ -38,9 +38,7 @@ Below modules will interact with each other:
 6. From "Create a cluster" screen, hit "create", Select M0 service keeping other services as default, hit "create deployment"
 7. Setup the username and password and then create DB user.
 
-Username: souvikpaul425
-password: 4tZF2i6GmUDBcz5K
-IP address: 171.49.253.77
+
 
 8. Go to "network access" and add ip address - "0.0.0.0/0" so that we can access it from anywhere
 9. Go back to project >> "Get Connection String" >> "Drivers" >> {Driver:Python, Version:3.6 or later} 
@@ -77,7 +75,7 @@ mongodb+srv://souvikpaul425:<db_password>@cluster0.i0rwmza.mongodb.net/?retryWri
     check: echo $env:MONGODB_URL
 
 
-$env:MONGODB_URL = "mongodb+srv://souvikpaul425:4tZF2i6GmUDBcz5K@cluster0.i0rwmza.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
 
 echo $env:MONGODB_URL
 
@@ -189,4 +187,5 @@ Enhancements:
 3. add hyperparameter  in hp_model.yaml
 4. save best hyperparameter
 5. save metrics report 
+6. try out XGBOOST and compare model
 6. Docker
