@@ -76,6 +76,11 @@ mongodb+srv://souvikpaul425:<db_password>@cluster0.i0rwmza.mongodb.net/?retryWri
     set: $env:MONGODB_URL = "mongodb+srv://<username>:<password>......"
     check: echo $env:MONGODB_URL
 
+
+$env:MONGODB_URL = "mongodb+srv://souvikpaul425:4tZF2i6GmUDBcz5K@cluster0.i0rwmza.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
+echo $env:MONGODB_URL
+
     To setup the connection url on Windows, open env variable setting option and add a new variable:
     Name: MONGODB_URL, Value = <url>
     Also add "artifact" dir to .gitignore file
@@ -83,7 +88,7 @@ mongodb+srv://souvikpaul425:<db_password>@cluster0.i0rwmza.mongodb.net/?retryWri
 ---------------------------- Data Validation, Data Transformation & Model Trainer ----------------------------
 
 19. Complete the work on utils.main_utils.py and config.schema.yaml file (add entire info about dataset for data validation step)
-20. Now work on the "Data Validation" component the way we did in step 17 for Data Ingestion. (Workflow mentioned below)
+20. Now work on the "Data Validation" component the way we did in step 17 for Data Ingestion. (Workflow mentioned at the top)
 21. Now work on the "Data Transformation" component the way we did in above step. (add estimator.py to entity folder)
 22. Now work on the "Model Trainer" component the way we did in above step. (add class to estimator.py in entity folder)
 
@@ -175,3 +180,13 @@ mongodb+srv://souvikpaul425:<db_password>@cluster0.i0rwmza.mongodb.net/?retryWri
         > type: Custom TCP > Port range: 5080 > 0.0.0.0/0 > Save rules
 33. Now paste the public ip address on the address bar +:5080 and your app will be launched.
 34. You can also do model training on /training route
+
+--------------------------------------------------------------------------------------------------------
+
+Enhancements:
+1. MongoDB connect to be do in code.
+2. add parameters in model.yaml
+3. add hyperparameter  in hp_model.yaml
+4. save best hyperparameter
+5. save metrics report 
+6. Docker
