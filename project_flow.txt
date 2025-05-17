@@ -182,10 +182,13 @@ echo $env:MONGODB_URL
 --------------------------------------------------------------------------------------------------------
 
 Enhancements:
-1. MongoDB connect to be do in code.
+
+1. MongoDB credential needs to be set always - workaround
 2. add parameters in model.yaml
 3. add hyperparameter  in hp_model.yaml
 4. save best hyperparameter
 5. save metrics report 
 6. try out XGBOOST and compare model
-6. Docker
+7. AWS credential needs to be set always - workaround
+
+
