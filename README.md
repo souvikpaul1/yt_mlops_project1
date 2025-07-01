@@ -1,8 +1,31 @@
 # yt_mlops_project1# MLOps Project - Vehicle Insurance Data Pipeline
 
-Welcome to this MLOps project, designed to demonstrate a robust pipeline for managing vehicle insurance data. This project aims to impress recruiters and visitors by showcasing the various tools, techniques, services, and features that go into building and deploying a machine learning pipeline for real-world data management. Follow along to learn about project setup, data processing, model deployment, and CI/CD automation!
+Welcome to this MLOps project, designed to demonstrate a robust pipeline for managing vehicle insurance data. This project aims to impress  visitors by showcasing the various tools, techniques, services, and features that go into building and deploying a machine learning pipeline for real-world data management. Follow along to learn about project setup, data processing, model deployment, and CI/CD automation!
 
 ---
+
+
+
+## 📁 Objective
+
+ - The goal of this project is to develop a machine learning model that predicts whether a customer is likely to be interested in purchasing vehicle insurance. The    prediction is based on customer demographics, vehicle details, and historical policy information.
+
+## 📁 Dataset Description
+ - The dataset includes the following features:
+
+ - Gender: Customer gender (Male/Female)
+ - Age: Age of the customer
+ - Driving_License: 1 if the customer has a driving license, 0 otherwise
+ - Region_Code: Encoded region identifier
+ - Previously_Insured: 1 if the customer was previously insured, 0 otherwise
+ - Vehicle_Age: Age of the vehicle (< 1 Year, 1-2 Year, > 2 Years)
+ - Vehicle_Damage: Whether the vehicle was previously damaged (Yes/No)
+ - Annual_Premium: The amount paid by the customer annually for the insurance
+ - Policy_Sales_Channel: Code for the sales channel of the policy
+ - Vintage: Number of days the customer has been associated with the company
+ - Response: Target variable (1 = interested, 0 = not interested)
+
+
 
 ## 📁 Project Setup and Structure
 
@@ -11,13 +34,13 @@ Welcome to this MLOps project, designed to demonstrate a robust pipeline for man
 
 ### Step 2: Package Management
 - Write the setup for importing local packages in `setup.py` and `pyproject.toml` files.
-- **Tip**: Learn more about these files from `crashcourse.txt`.
+
 
 ### Step 3: Virtual Environment and Dependencies
 - Create a virtual environment and install required dependencies from `requirements.txt`:
   ```bash
-  conda create -n vehicle python=3.10 -y
-  conda activate vehicle
+  conda create -n vehicle_souvik python=3.10 -y
+  conda activate vehicle_souvik
   pip install -r requirements.txt
   ```
 - Verify the local packages by running:

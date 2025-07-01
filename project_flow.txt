@@ -191,13 +191,17 @@ check crashcourse section
 --------------------------------------------------------------------------------------------------------
 Enhancements:
 
-1. MongoDB credential needs to be set always - workaround --> added to github secrets
-* 2. add parameters in model.yaml
-* 3. add hyperparameter  in hp_model.yaml
-* 4. save best hyperparameter
-* 5. save metrics report 
-* 6. try out XGBOOST and compare model
-7. AWS credential needs to be set always - workaround --> added to github secrets
-* 8. how to give a better name to ip address like vehicle_price_prediction.com instead of ip address
+
+* 1. add parameters in model.yaml
+* 2. save metrics report for comparison
+* 3. try out XGBOOST and compare model as part of experiments
+* 4. Currently my model is running on 1 ec2 instance what if that ec2 server fails.
+      - setup the runner as a service
+      - startthe service
+      
+* 5. high traffic how will it balance
+* 6. Online and offline feature store
+* 7. serverless
+
 
 
