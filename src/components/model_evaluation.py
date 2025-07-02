@@ -30,6 +30,8 @@ class ModelEvaluation:
         except Exception as e:
             raise MyException(e, sys) from e
 
+    # this check if in S3 bucket any model is avaiable in production stage
+    # if model is available then it will return model object else None
     def get_best_model(self) -> Optional[Proj1Estimator]:
         """
         Method Name :   get_best_model
@@ -49,7 +51,8 @@ class ModelEvaluation:
             return None
         except Exception as e:
             raise  MyException(e,sys)
-        
+
+    # these methods are used to transform the test data before evaluation, train is already transformed as part of data transformation.        
     def _map_gender_column(self, df):
         """Map Gender column to 0 for Female and 1 for Male."""
         logging.info("Mapping 'Gender' column to binary values")
